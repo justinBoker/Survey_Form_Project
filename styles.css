@@ -1,0 +1,68 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    background-image: url(https://img.freepik.com/premium-photo/american-usa-flag-blank-background-holiday-flag-american-public-holidays-elections-high-quality-photo_90380-2590.jpg?w=2000);
+    padding: 15px;
+}
+
+div {
+    background-color: #7393B3;
+    margin-left: 48%;
+    height: 100%;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 0 10px 10px 10px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+#description {
+    font-size: 25px;
+    text-align: center;
+}
+
+fieldset {
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input, select, textarea {
+    width: 100%;
+    margin: 10px 0 0 0;
+    min-height: 2em;
+}
+
+p {
+    font-size: 16px;
+}
+
+input[name="holiday-thoughts"], input[name="holiday-add"] {
+    width: unset;
+    vertical-align: middle;
+    margin: 0 0.5em 0 0;
+}
+
+.radio, .checkbox {
+    display: inline-block;
+    padding-right: 5em;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#submit {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 15px;
+    min-width: 300px;
+    border-color: black;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Holiday Survey Form</title>
+  </head>
+  <body>
+    <div>
+        <h1 id="title">American Holiday Survey</h1>
+        <p id="description">Please complete the survey about your preferences relating to American holidays.</p>
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label">Enter Your Full Name: <input id="name" type="text" placeholder="John Smith" required /></label>
+                <label id="email-label">Enter Your Email: <input id="email" type="email" placeholder="jsmith@gmail.com" required /></label>
+                <label id="number-label">Enter Your Age (years): <input id="number" type="number" min="13" max="120" placeholder="13 - 120" /></label>
+            </fieldset>
+            <fieldset>
+                <label>What is your favorite American holiday?
+                    <select id="dropdown">
+                        <option>(select one)</option>
+                        <option>Christmas</option>
+                        <option>Thanksgiving</option>
+                        <option>Mother's Day</option>
+                        <option>Easter</option>
+                        <option>Fourth of July</option>
+                        <option>Halloween</option>
+                        <option>Father's Day</option>
+                        <option>Valentine's Day</option>
+                        <option>Saint Patrick's Day</option>
+                        <option>New Year's Day</option>
+                        <option>Other</option>
+                    </select>
+                </label>
+                <label>If other, please list here: <input type="text" placeholder="ex. Veteran's Day" /></label>
+            </fieldset>
+            <fieldset>
+                <p>The U.S. currently has eleven offical public holidays. The holidays are New Year's Day, Martin Luther King Jr. Day, Presidents' Day, 
+                    Memorial Day, Juneteenth, Independence Day, Labor Day, Columbus Day, Veterans Day, Thanksgiving, and Christmas Day.</p>
+                <label>Do you believe the U.S. has enough holidays?</label>
+                <label class="radio"><input name="holiday-thoughts" type="radio" value="1" /> Yes</label>
+                <label class="radio"><input name="holiday-thoughts" type="radio" value="2" /> More is needed</label>
+                <label class="radio"><input name="holiday-thoughts" type="radio" value="3" /> There are too many</label> 
+                <label>Please check which American holidays you believe should be recognized as offical public holidays.
+                    <label class="checkbox"><input name="holiday-add" type="checkbox" value="1" /> Mother's Day</label>
+                    <label class="checkbox"><input name="holiday-add" type="checkbox" value="2" /> Easter</label>
+                    <label class="checkbox"><input name="holiday-add" type="checkbox" value="3" /> Halloween</label>
+                    <label class="checkbox"><input name="holiday-add" type="checkbox" value="4" /> Father's Day</label>
+                    <label class="checkbox"><input name="holiday-add" type="checkbox" value="11" /> Other</label>
+                    <label>If other, please list here: <input type="text" placeholder="ex. Veteran's Day" /></label>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>Please leave any additional thoughts about American holidays: <textarea rows="3" cols="30"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Submit" id="submit" />
+        </form>
+    </div>
+  </body>
+</html>
