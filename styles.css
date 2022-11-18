@@ -1,20 +1,26 @@
 body {
     font-family: Verdana, sans-serif;
     font-size: 18px;
+}
+
+.parallax {
     background-image: url(https://idahonews.com/resources/media/a3a84c6e-a972-485b-9dd2-9948f951f222-originalBlur_IMG_2318.JPG?1629699742077);
+    min-height: 500px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    padding: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 div {
-    background-color: #FDA172;
-    margin: auto;
-    width: 40%;
-    max-width: 900px;
+    background-color: #bebebe;
+    width: 35%;
     min-width: 300px;
     border: 3px solid black;
     border-radius: 10px;
-    padding: 0 10px 10px 10px;
     opacity: 0.85;
 }
 
@@ -65,8 +71,17 @@ input[name="holiday-thoughts"], input[name="holiday-add"] {
     display: block;
     width: 60%;
     margin: 1em auto;
-    height: 2em;
+    height: 3em;
     font-size: 15px;
     min-width: 300px;
-    border-color: black;
+    background-color: #3366cc;
+    color: white;
+}
+
+input {
+    border-radius: 5px;
+}
+
+textarea {
+    border-radius: 5px;
 }
